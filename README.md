@@ -19,7 +19,7 @@ If you see a bunch of lines of text pop, it has been installed correctly, else y
 Now that we've got that out of the way, we can finally start!
 
 ### Unit testing for C#?
-All you C#'ers should check out [This Page]() to get started on the C# Unit Testing Codelab.
+All you C#'ers should check out [This Page](https://github.com/Weava/Unit-Testing-Codelab/tree/csharp) to get started on the C# Unit Testing Codelab.
 
 ### Unit testing for Obj-C?
-I don't envy you, but it must be done. Check out [This Page]() to get started on the Objective-C Unit Testing Codelab.
+I don't envy you, but it must be done. Check out [This Page](https://github.com/Weava/Unit-Testing-Codelab/tree/objc) to get started on the Objective-C Unit Testing Codelab.
