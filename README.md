@@ -13,7 +13,7 @@ Go to [This Link](https://git-scm.com/download/mac) to download the Git for Mac 
 You shouldn't need to do anything else after it finishes, just enjoy all that Git Goodness!
 
 ###### For all users
-Go to your main command line app (CMD for Windows, Terminal for Mac) and type git.
+Once you have finished installing Git, go to your main command line app (CMD for Windows, Terminal for Mac) and type git.
 If you see a bunch of lines of text pop, it has been installed correctly, else you may need to install again.
 
 Now that we've got that out of the way, we can finally start!
