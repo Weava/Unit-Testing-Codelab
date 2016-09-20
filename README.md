@@ -147,6 +147,10 @@ Now we can put all of those examples together in one testable case. Remember the
 
 Not so bad! We put `operations = [[SimpleOperations alloc] init];` In our setUp function, as that will be called before any of our test methods are called (This is our **Arrange** portion). For example, our `testAddition` method would have `setUp` be called before any of it's statements are executed. Then our `testAddition` statements execute the **Act** and **Assert** steps of our test.
 
+### And Now, We Run It
+
+// Insert example of running unit tests in XCode.
+
 ### Going from here
 
 Now that you have an idea of how both unit tests, and XCTest works, let's try creating unit test methods for the rest of our `SimpleOperations` class's methods. Then we can create an entirely new test case file for our `ComplexOperations`.
