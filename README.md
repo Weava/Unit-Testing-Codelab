@@ -23,6 +23,11 @@ With that all setup, you are now prepared to write tests!
 
 ### So Where Are Tests in My .Net Project?
 
-By default, Visual Studio does not generate a unit testing project. Adding a unit testing project to your solution is very simple.
-In the project explorer window, right click on your solution. Hover over add, and click add new project. A dialog box will appear. On the left side, containing a few options. You will be looking for the option that says test. Next choose Unit Test Project and give your test project a name (usually going to be your projectName + Test). Visual studio will now generate your unit test project.
+By default, Visual Studio does not generate a unit testing project. Adding a unit testing project to your solution is simple, just follow these steps.
 
+* In the project explorer window, right click on your solution. 
+* Hover over add, and click add new project. 
+* On the left side of the newly opened dialog box, you will be looking for the option that says test. 
+* Choose Unit Test Project and give your test project a name (usually going to be your projectName + Test). 
+
+Visual studio will now generate your unit test project.
