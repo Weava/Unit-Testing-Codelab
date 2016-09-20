@@ -168,7 +168,7 @@ Not so bad! We put `operations = new SimpleOperations();` In our `SetUp` functio
 
 ### And Now, We Run It
 
-// Insert example of running unit tests in Visual Studio
+Running tests in Visual Studio is as easy as right-clicking on the `[TestMethod]` or `[TestClass]` and clicking run tests. Your project will build and your tests will run. Alternatively, you can run tests from the `Test` tab near the top of the Visual Studio window.
 
 ### Going From Here
 
