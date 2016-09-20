@@ -24,7 +24,7 @@ With that all setup, you are now prepared to write tests!
 
 ### So Where Are Tests in My iOS Project?
 
-You have probably seen the <project-name>Test folders that XCode generates for you whenever you create a new project. These folders house all of your XCTest unit test case classes. When you first create your project and open up the generated test class they made for you (usually called <project-name>Test.m) You will see something like this:
+You have probably seen the projectNameTest folders that XCode generates for you whenever you create a new project. These folders house all of your XCTest unit test case classes. When you first create your project and open up the generated test class they made for you (usually called projectNameTest.m) You will see something like this:
 
 ````
 @interface unittestTests : XCTestCase
