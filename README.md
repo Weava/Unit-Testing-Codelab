@@ -1,25 +1,28 @@
-# Unit-Testing-Codelab
-A codelab created for demonstrating unit testing in C# and Obj-C.
+# C# Unit Testing codelab
 
-### Before we hop into the code...
-You will need to install Git on your machine. 
+C# unit tests run on a framework known, creatively, as the Microsoft Unit Testing Framework ([Here's a little sample](https://developer.apple.com/reference/xctest?language=objc)).
 
-###### For Windows users
-Go to [This Link](https://git-scm.com/download/win) to download the Git installer.
-When going through the install process, make sure you add Git to the Windows Command Prompt (everything is much easier that way)
+### Getting the Project
 
-###### For Mac users
-Go to [This Link](https://git-scm.com/download/mac) to download the Git for Mac installer.
-You shouldn't need to do anything else after it finishes, just enjoy all that Git Goodness!
+To get the source for this project so you can start writing tests, make sure you have git installed.
+In your Terminal.app type 
 
-###### For all users
-Once you have finished installing Git, go to your main command line app (CMD for Windows, Terminal for Mac) and type git.
-If you see a bunch of lines of text pop, it has been installed correctly, else you may need to install again.
+````
+git clone https://github.com/Weava/Unit-Testing-Codelab.git
+````
 
-Now that we've got that out of the way, we can finally start!
+Once the repository has finished downloading, navigate into the newly made Unit-Testing-Codelab folder in your terminal, then enter the following:
 
-### Unit testing for C#?
-All you C#'ers should check out [This Page]() to get started on the C# Unit Testing Codelab.
+````
+git checkout -f startCSharp
+````
 
-### Unit testing for Obj-C?
-I don't envy you, but it must be done. Check out [This Page]() to get started on the Objective-C Unit Testing Codelab.
+This will get you the starting code with no unit tests written for the project.
+
+With that all setup, you are now prepared to write tests!
+
+### So Where Are Tests in My .Net Project?
+
+By default, Visual Studio does not generate a unit testing project. Adding a unit testing project to your solution is very simple.
+In the project explorer window, right click on your solution. Hover over add, and click add new project. A dialog box will appear. On the left side, containing a few options. You will be looking for the option that says test. Next choose Unit Test Project and give your test project a name (usually going to be your projectName + Test). Visual studio will now generate your unit test project.
+
