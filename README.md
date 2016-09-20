@@ -11,11 +11,11 @@ In your Terminal.app type
 git clone https://github.com/Weava/Unit-Testing-Codelab.git
 ````
 
-Once the repository has finished downloading, navigate into the newly made Unit-Testing-Codelab folder in your terminal, then type the following:
+Once the repository has finished downloading, navigate into the newly made Unit-Testing-Codelab folder in your terminal, then enter the following:
 
 ````
 git checkout -b objc
-git checkout -f start
+git pull origin 89a0d3e7b39be83270d2d211daacd82c3da81a03
 ````
 
 This will get you the starting code with no unit tests written for the project.
