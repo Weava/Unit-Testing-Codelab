@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Codelab
 {
-    class SimpleOperations
+    public class SimpleOperations
     {
         public int add(int x, int y)
         {
