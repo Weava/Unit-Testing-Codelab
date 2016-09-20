@@ -30,7 +30,7 @@ By default, Visual Studio does not generate a unit testing project. Adding a uni
 * On the left side of the newly opened dialog box, you will be looking for the option that says test. 
 * Choose Unit Test Project and give your test project a name (usually going to be your projectName + Test). 
 
-Visual studio will now generate your unit test project.
+Visual studio will now generate your unit test project. You may have to add your original project as a reference to the Unit Test project. To do this, just right click on references inside of the newly generated test project, and click `Add Reference`. After doing so, click `Project` in the dialog box that appeared, and select your project as the reference to add.
 
 By default, A file will be generated that looks similar to this
 
