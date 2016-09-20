@@ -1,25 +1,17 @@
-# Unit-Testing-Codelab
-A codelab created for demonstrating unit testing in C# and Obj-C.
+# Objective-C Unit Tests (with iOS)
 
-### Before we hop into the code...
-You will need to install Git on your machine. 
+Objective-C unit tests run on a framework known as XCTest ([Here's a little sample](https://developer.apple.com/reference/xctest?language=objc)).
 
-###### For Windows users
-Go to [This Link](https://git-scm.com/download/win) to download the Git installer.
-When going through the install process, make sure you add Git to the Windows Command Prompt (everything is much easier that way)
+Unit testing with XCTest (or most any unit testing framework for that matter) will involve three different steps:
 
-###### For Mac users
-Go to [This Link](https://git-scm.com/download/mac) to download the Git for Mac installer.
-You shouldn't need to do anything else after it finishes, just enjoy all that Git Goodness!
+**Arrange**, **Act**, and **Assert**
 
-###### For all users
-Once you have finished installing Git, go to your main command line app (CMD for Windows, Terminal for Mac) and type git.
-If you see a bunch of lines of text pop, it has been installed correctly, else you may need to install again.
+#### Arrange
 
-Now that we've got that out of the way, we can finally start!
+Arranging, in unit testing, is the act of setting up the items that you wish to eventually act upon, and setting up any dependencies that those items may rely on (this is where you will fake, mock, or do whatever to said dependencies).
 
-### Unit testing for C#?
-All you C#'ers should check out [This Page]() to get started on the C# Unit Testing Codelab.
+For example, using our `SimpleOperations` class in this project, we would do the following to arrange it.
 
-### Unit testing for Obj-C?
-I don't envy you, but it must be done. Check out [This Page]() to get started on the Objective-C Unit Testing Codelab.
+`SimpleOperations operations = [[SimpleOperations alloc] init];`
+
+That's it! Of course, this gets more complicated when your class has tons of dependencies, and mocks/fakes become involved, but we won't talk about that here.
