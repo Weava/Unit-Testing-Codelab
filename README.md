@@ -5,7 +5,7 @@ Objective-C unit tests run on a framework known as XCTest ([Here's a little samp
 ### Getting the Project
 
 To get the source for this project so you can start writing tests, make sure you have git installed.
-In your Terminal.app type 
+In your Terminal.app type
 
 ````
 git clone https://github.com/Weava/Unit-Testing-Codelab.git
@@ -14,8 +14,7 @@ git clone https://github.com/Weava/Unit-Testing-Codelab.git
 Once the repository has finished downloading, navigate into the newly made Unit-Testing-Codelab folder in your terminal, then enter the following:
 
 ````
-git checkout -b objc
-git pull origin 89a0d3e7b39be83270d2d211daacd82c3da81a03
+git checkout -f startObjc
 ````
 
 This will get you the starting code with no unit tests written for the project.
@@ -85,7 +84,7 @@ Acting is just as simple as arranging, and we do it all the time in our producti
 Using our `SimpleOperations` example again, we could call our add function.
 
 ````
-int addResult = [operations add:2 toY:5]; // Use our add method for a result
+int addResult = [_operations addX:2 toY:5]; // Use our add method for a result
 ````
 
 Easy, right? Nothing really new was learned here, we have all called methods. This is generally how complicated acting gets, calling methods.
@@ -117,19 +116,19 @@ Now we can put all of those examples together in one testable case. Remember the
 - (void)setUp {
     // ARRANGE
     [super setUp];
-    operations = [[SimpleOperations alloc] init];
+    _operations = [[SimpleOperations alloc] init];
 }
 
 - (void)tearDown {
     // De-allocate objects
-    [operations release];
+    _operations = nil;
     [super tearDown];
 }
 
 - (void)testAddition {
     // ACT
-    int addResult = [operations add:2 toY:5];
-    
+    int addResult = [_operations addX:2 toY:5];
+
     // ASSERT
     XCTAssertEqual(addResult, 10, @"2 + 5 doesn't equal 10, you idiot."); // Will fail
     XCTAssertEqual(addResult, 7, @"If 2 + 5 doesn't equal 7, then my entire life is a lie."); // Will succeed
@@ -145,11 +144,11 @@ Now we can put all of those examples together in one testable case. Remember the
 @end
 ````
 
-Not so bad! We put `operations = [[SimpleOperations alloc] init];` In our setUp function, as that will be called before any of our test methods are called (This is our **Arrange** portion). For example, our `testAddition` method would have `setUp` be called before any of it's statements are executed. Then our `testAddition` statements execute the **Act** and **Assert** steps of our test.
+Not so bad! We put `_operations = [[SimpleOperations alloc] init];` In our setUp function, as that will be called before any of our test methods are called (This is our **Arrange** portion). For example, our `testAddition` method would have `setUp` be called before any of it's statements are executed. Then our `testAddition` statements execute the **Act** and **Assert** steps of our test.
 
 ### And Now, We Run It
 
-// Insert example of running unit tests in XCode.
+Running unit tests in XCode is very simple. You can right click on the testMethod or testClass, then click `Test 'methodName'`. This will automatically build and run the tests selected. You can also run all of your unit tests by clicking Product in the top menu bar, and clicking Test.
 
 ### Going from here
 
