@@ -130,7 +130,7 @@ Now we can put all of those examples together in one testable case. Remember the
     int addResult = [_operations addX:2 toY:5];
 
     // ASSERT
-    XCTAssertEqual(addResult, 10, @"2 + 5 doesn't equal 10, you idiot."); // Will fail
+    XCTAssertEqual(addResult, 10, @"2 + 5 != 10"); // Will fail
     XCTAssertEqual(addResult, 7, @"If 2 + 5 doesn't equal 7, then my entire life is a lie."); // Will succeed
 }
 
