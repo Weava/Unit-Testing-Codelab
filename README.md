@@ -96,8 +96,8 @@ Assertions are a new concept, but are super simple. In fact, their name gives it
 Using the previous example where we assigned the value `addResult` to the result of the method `[operations add:2 toY:5]` we can assert one, and only one integer, to make this test pass.
 
 ````
-XCTAssertEqual(addResult, 10, @"2 + 5 doesn't equal 10, you idiot."); // Will fail
-XCTAssertEqual(addResult, 7, @"If 2 + 5 doesn't equal 7, then my entire life is a lie."); // Will succeed
+XCTAssertEqual(addResult, 10, @"2 + 5 != 10"); // Will fail
+XCTAssertEqual(addResult, 7, @"2 + 5 = 7"); // Will succeed
 ````
 
 That is assertions in a nutshell. There are plenty of other assert methods other than `XCTAssertEqual` (You can check them all out [here](https://developer.apple.com/reference/xctest?language=objc)). As you can see, assertions are just checks to see if the result of the operation you performed in the **Act** stage meets a specific output that you define. Assertions seem simple on the surface, and syntactically they are. It is deciding what to assert, and whether you are writing good testable code that is a challenge.
@@ -131,7 +131,7 @@ Now we can put all of those examples together in one testable case. Remember the
 
     // ASSERT
     XCTAssertEqual(addResult, 10, @"2 + 5 != 10"); // Will fail
-    XCTAssertEqual(addResult, 7, @"If 2 + 5 doesn't equal 7, then my entire life is a lie."); // Will succeed
+    XCTAssertEqual(addResult, 7, @"2 + 5 = 7"); // Will succeed
 }
 
 - (void)testPerformanceExample {
