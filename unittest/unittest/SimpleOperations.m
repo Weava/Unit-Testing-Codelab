@@ -16,7 +16,7 @@
 }
 
 - (int) subractX:(int)x fromY:(int)y {
-    return x - y;
+    return y - x;
 }
 
 - (int) multiplyX:(int)x byY:(int)y {
@@ -24,7 +24,7 @@
 }
 
 - (int) divideX:(int)x fromY:(int)y {
-    return x / y;
+    return y / x;
 }
 
 @end

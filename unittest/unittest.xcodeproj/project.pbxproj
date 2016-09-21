@@ -18,6 +18,7 @@
 		1CB68F801D90A4400060EBAB /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB68F7F1D90A4400060EBAB /* Calculator.m */; };
 		1CB68F861D90A4710060EBAB /* ComplexOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB68F851D90A4710060EBAB /* ComplexOperations.m */; };
 		1CB68F881D90A6C40060EBAB /* SimpleOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB68F871D90A6C40060EBAB /* SimpleOperations.m */; };
+		1CB68F8B1D9209660060EBAB /* ComplexOperationsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB68F8A1D9209660060EBAB /* ComplexOperationsTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		1CB68F851D90A4710060EBAB /* ComplexOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexOperations.m; sourceTree = "<group>"; };
 		1CB68F871D90A6C40060EBAB /* SimpleOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleOperations.m; sourceTree = "<group>"; };
 		1CB68F891D90A6EA0060EBAB /* SimpleOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleOperations.h; sourceTree = "<group>"; };
+		1CB68F8A1D9209660060EBAB /* ComplexOperationsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexOperationsTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				1CB68F651D90A3170060EBAB /* unittestTests.m */,
 				1CB68F671D90A3170060EBAB /* Info.plist */,
+				1CB68F8A1D9209660060EBAB /* ComplexOperationsTest.m */,
 			);
 			path = unittestTests;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB68F8B1D9209660060EBAB /* ComplexOperationsTest.m in Sources */,
 				1CB68F661D90A3170060EBAB /* unittestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +527,7 @@
 				1CB68F771D90A3170060EBAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CB68F781D90A3170060EBAB /* Build configuration list for PBXNativeTarget "unittestTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +536,7 @@
 				1CB68F7A1D90A3170060EBAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CB68F7B1D90A3170060EBAB /* Build configuration list for PBXNativeTarget "unittestUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +545,7 @@
 				1CB68F7D1D90A3170060EBAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
