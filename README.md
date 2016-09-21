@@ -23,3 +23,13 @@ All you C#'ers should check out [This Page](https://github.com/Weava/Unit-Testin
 
 ### Unit testing for Obj-C?
 I don't envy you, but it must be done. Check out [This Page](https://github.com/Weava/Unit-Testing-Codelab/tree/objc) to get started on the Objective-C Unit Testing Codelab.
+
+
+## Reference Links
+
+* [Google Slides Presentation](https://docs.google.com/presentation/d/1BQiIUPrRC4nIidzA2laSL-pno3KrciOeHnwtY96QFUw/edit?usp=sharing)
+* [C# Unit Test Basics](https://msdn.microsoft.com/en-us/library/hh694602.aspx)
+* [Objective-C Unit Test Basics](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/04-writing_tests.html)
+* [Unit Testing in MVC .Net](http://www.asp.net/mvc/overview/older-versions-1/unit-testing/creating-unit-tests-for-asp-net-mvc-applications-cs)
+* [TDD The Microsoft Way](https://msdn.microsoft.com/en-us/library/aa730844(v=vs.80).aspx)
+* [Generating Method Stubs in C#](https://msdn.microsoft.com/en-us/library/hh549175.aspx)
