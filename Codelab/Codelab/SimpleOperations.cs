@@ -15,7 +15,7 @@ namespace Codelab
 
         public int subtract(int x, int y)
         {
-            return x - y;
+            return y - x;
         }
 
         public int multiply(int x, int y)
@@ -25,7 +25,7 @@ namespace Codelab
 
         public int divide(int x, int y)
         {
-            return x / y;
+            return y / x;
         }
     }
 }
