@@ -118,8 +118,8 @@ Assertions are a new concept, but are super simple. In fact, their name gives it
 Using the previous example where we assigned the value addResult to the result of the method `operations.add(2, 5)` we can assert one, and only one integer, to make this test pass.
 
 ````
-Assert.AreEqual(addResult, 10, "2 + 5 doesn't equal 10."); // Will fail
-Assert.AreEqual(addResult, 7, "If 2 + 5 doesn't equal 7, then my entire life is a lie."); // Will succeed
+Assert.AreEqual(addResult, 10, "2 + 5 != 10."); // Will fail
+Assert.AreEqual(addResult, 7, "2 + 5 = 7"); // Will succeed
 ````
 
 That is assertions in a nutshell. There are plenty of other assert methods other than Assert.AreEqual (You can check them all out [here](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.assert.aspx)). As you can see, assertions are just checks to see if the result of the operation you performed in the Act stage meets a specific output that you define. Assertions seem simple on the surface, and syntactically they are. It is deciding what to assert, and whether you are writing good testable code that is a challenge.
@@ -150,8 +150,8 @@ namespace CodelabTests
             var addResult = operations.add(2, 5); // User our add method for a result
             
             // Assert
-            Assert.AreEqual(addResult, 10, "2 + 5 doesn't equal 10."); // Will fail
-            Assert.AreEqual(addResult, 7, "If 2 + 5 doesn't equal 7, then my entire life is a lie."); // Will succeed
+            Assert.AreEqual(addResult, 10, "2 + 5 != 10."); // Will fail
+            Assert.AreEqual(addResult, 7, "2 + 5 = 7"); // Will succeed
         }
         
         [TestCleanup]
