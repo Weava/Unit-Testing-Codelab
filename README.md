@@ -106,7 +106,7 @@ Acting is just as simple as arranging, and we do it all the time in our producti
 Using our `SimpleOperations` example again, we could call our add function.
 
 ````
-var addResult = operations.add(2, 5); // User our add method for a result
+var addResult = operations.add(2, 5); // Use our add method for a result
 ````
 
 Easy, right? Nothing really new was learned here, we have all called methods. This is generally how complicated acting gets, calling methods.
