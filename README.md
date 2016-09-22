@@ -115,7 +115,7 @@ Easy, right? Nothing really new was learned here, we have all called methods. Th
 
 Assertions are a new concept, but are super simple. In fact, their name gives it away. Assertions allow you to define a specific result for your operation that you called during the **Act** stage of the unit testing process.
 
-Using the previous example where we assigned the value addResult to the result of the method `operations.add(2, 5)` we can assert one, and only one integer, to make this test pass.
+Using the previous example where we assigned the value `addResult` to the result of the method `operations.add(2, 5)` we can assert one, and only one integer, to make this test pass.
 
 ````
 Assert.AreEqual(addResult, 10, "2 + 5 != 10."); // Will fail
